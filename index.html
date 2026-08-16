@@ -36,6 +36,13 @@
   a { color: var(--link); }
   ul { padding-left: 1.25rem; }
   li { margin: .3rem 0; }
+  .attribution {
+    margin-top: 2.5rem; padding: 1.25rem 1.5rem;
+    border: 1px solid var(--rule); border-radius: 6px;
+  }
+  .attribution h2 { margin-top: 0; }
+  .policy-links { list-style: none; padding: 0; margin: 1rem 0 0; }
+  .policy-links li { margin: .4rem 0; }
   footer {
     margin-top: 3rem; padding-top: 1.25rem;
     border-top: 1px solid var(--rule);
@@ -63,16 +70,27 @@
     <li><strong>Sing &amp; Sprout</strong> — gentle songs and early learning for ages 2–5</li>
   </ul>
 
-  <h2>Google API use</h2>
-  <p>The tool uses the YouTube Data API v3 to upload videos to the operator's own channels and set
-  their metadata, and the YouTube Analytics API to read back performance data for those same videos.
-  It does not access private user data belonging to anyone else.</p>
-  <p>Its use of information received from Google APIs adheres to the
-  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
-  User Data Policy</a>, including the Limited Use requirements.</p>
-
   <h2>Contact</h2>
   <p><a href="mailto:pothaladileepkumar@gmail.com">pothaladileepkumar@gmail.com</a></p>
+
+  <section class="attribution">
+    <h2>This application uses YouTube API Services</h2>
+    <p>Content Engine uses the <strong>YouTube Data API v3</strong> to upload videos to the operator's
+    own channels and set their metadata, and the <strong>YouTube Analytics API</strong> to read back
+    performance data for those same videos. It does not access private user data belonging to anyone
+    else.</p>
+    <p>By using this application, you are agreeing to be bound by the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Its use of information
+    received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+    User Data Policy</a>, including the Limited Use requirements.</p>
+    <ul class="policy-links">
+      <li><a href="/privacy"><strong>Privacy Policy</strong></a></li>
+      <li><a href="/terms"><strong>Terms of Service</strong></a></li>
+      <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></li>
+      <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+    </ul>
+  </section>
 
   <footer>
     <a href="/privacy">Privacy Policy</a>
