@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Engine</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e3e3e3;
+    --link: #0b57d0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181c;
+      --fg: #e6e6e6;
+      --muted: #a0a0a0;
+      --rule: #2e3237;
+      --link: #8ab4f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .6rem; }
+  .tagline { color: var(--muted); margin: 0 0 2rem; }
+  a { color: var(--link); }
+  ul { padding-left: 1.25rem; }
+  li { margin: .3rem 0; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+  footer a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Content Engine</h1>
+  <p class="tagline">A private, single-operator tool for producing and publishing original video content.</p>
+
+  <p>Content Engine is a personal tool built and operated by Dileep Kumar. It automates one person's
+  own video production pipeline: it generates original scripts, produces original narration and
+  motion-graphic visuals, renders the finished video locally, and uploads it to YouTube channels
+  that the operator owns and operates.</p>
+
+  <p>It is not a public product. There is no sign-up, no web interface, and no users other than the
+  operator.</p>
+
+  <h2>Channels it publishes to</h2>
+  <ul>
+    <li><strong>Vice Signal</strong> — gaming news, lore, and commentary</li>
+    <li><strong>Sing &amp; Sprout</strong> — gentle songs and early learning for ages 2–5</li>
+  </ul>
+
+  <h2>Google API use</h2>
+  <p>The tool uses the YouTube Data API v3 to upload videos to the operator's own channels and set
+  their metadata, and the YouTube Analytics API to read back performance data for those same videos.
+  It does not access private user data belonging to anyone else.</p>
+  <p>Its use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+  User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:pothaladileepkumar@gmail.com">pothaladileepkumar@gmail.com</a></p>
+
+  <footer>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
